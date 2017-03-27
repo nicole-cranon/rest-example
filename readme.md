@@ -46,7 +46,7 @@ On proxy(ignore ssl):
 Run Configurations > Maven Build > Parameter Add:
 
 Parameter Name                             | Value
--------------------------------------------|-------:
+-------------------------------------------|:------:
 maven.wagon.http.ssl.insecure              | true
 maven.wagon.http.ssl.allowall              | true
 maven.wagon.http.ssl.ignore.validity.dates | true
