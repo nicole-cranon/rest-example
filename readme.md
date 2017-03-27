@@ -1,9 +1,11 @@
 # rest-example 
 
 
-##Run configurations Intellij
+## Run configurations Intellij
 
 On proxy (ignore ssl):
+
+Put desired option command in the 'Command line' text box. 
 
 Install
 ```
@@ -37,7 +39,7 @@ Run
 spring-boot:run
 ```
 
-##Run configurations Eclipse Neon
+## Run configurations Eclipse Neon
 
 On proxy(ignore ssl):
 
