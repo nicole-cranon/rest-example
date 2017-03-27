@@ -2,37 +2,59 @@
 
 
 ##Run configurations Intellij
-On proxy:
+
+On proxy (ignore ssl):
 
 Install
-```sh
+```
 -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true install
 ```
 
 Clean
-```sh
+```
 -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true clean
 ```
 
 Run
-```sh
+```
 -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true spring-boot:run
 ```
 
 Off proxy:
+
 Install
-```sh
+```
 install
 ```
 
 Clean
-```sh
+```
 clean
 ```
 
 Run
-```sh
+```
 spring-boot:run
 ```
 
-Run configurations Eclipse Neon
+##Run configurations Eclipse Neon
+
+On proxy(ignore ssl):
+
+Run Configurations > Maven Build > Parameter Add:
+
+Parameter Name                             | Value
+-------------------------------------------|-------:
+maven.wagon.http.ssl.insecure              | true
+maven.wagon.http.ssl.allowall              | true
+maven.wagon.http.ssl.ignore.validity.dates | true
+
+Goals:
+
+* install - install maven dependencies, create war/jar
+* clean - remove target with all compiled artifacts
+* spring-boot:run - runs the application
+
+Off proxy: 
+
+Run as > * (any of the options under this option should work off proxy)
